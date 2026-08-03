@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Clock Domain Crossing</title>
+  <desc id="desc">Una señal cruza entre dos dominios de reloj mediante dos flip-flops sincronizadores.</desc>
+  <defs><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#25352b" stroke-width="1"/></pattern></defs>
+  <rect width="1200" height="760" fill="#202e26"/><rect width="1200" height="760" fill="url(#grid)"/>
+  <text x="70" y="92" fill="#d8f36a" font-family="monospace" font-size="16" letter-spacing="3">CDC / CLOCK DOMAIN CROSSING</text>
+  <g transform="translate(80 195)"><rect width="230" height="245" rx="5" fill="#24372b" stroke="#f68952"/><text x="115" y="69" fill="#f68952" font-family="monospace" font-size="18" text-anchor="middle">CLK_A</text><text x="115" y="125" fill="#d8f36a" font-family="monospace" font-size="20" text-anchor="middle">signal_a</text><path d="M42 170h146" stroke="#829987" stroke-width="4"/><circle cx="35" cy="170" r="7" fill="#f68952"/></g>
+  <path d="M310 318h92" stroke="#f68952" stroke-width="4" stroke-dasharray="8 9"/>
+  <g transform="translate(402 185)"><rect width="178" height="266" rx="5" fill="#18231d" stroke="#aec6fa"/><text x="89" y="58" fill="#aec6fa" font-family="monospace" font-size="17" text-anchor="middle">SYNC_1</text><text x="89" y="95" fill="#91a694" font-family="monospace" font-size="12" text-anchor="middle">METASTABLE?</text><rect x="45" y="128" width="88" height="65" fill="#2b4032" stroke="#f68952"/><text x="89" y="169" fill="#f68952" font-family="monospace" font-size="15" text-anchor="middle">DFF</text><path d="M20 228h138" stroke="#829987" stroke-width="3"/></g>
+  <path d="M580 318h87" stroke="#aec6fa" stroke-width="4"/>
+  <g transform="translate(667 185)"><rect width="178" height="266" rx="5" fill="#18231d" stroke="#d8f36a"/><text x="89" y="58" fill="#d8f36a" font-family="monospace" font-size="17" text-anchor="middle">SYNC_2</text><text x="89" y="95" fill="#91a694" font-family="monospace" font-size="12" text-anchor="middle">STABLE</text><rect x="45" y="128" width="88" height="65" fill="#2b4032" stroke="#d8f36a"/><text x="89" y="169" fill="#d8f36a" font-family="monospace" font-size="15" text-anchor="middle">DFF</text><path d="M20 228h138" stroke="#829987" stroke-width="3"/></g>
+  <path d="M845 318h92" stroke="#d8f36a" stroke-width="4"/>
+  <g transform="translate(937 195)"><rect width="190" height="245" rx="5" fill="#24372b" stroke="#d8f36a"/><text x="95" y="69" fill="#d8f36a" font-family="monospace" font-size="18" text-anchor="middle">CLK_B</text><text x="95" y="125" fill="#d8f36a" font-family="monospace" font-size="20" text-anchor="middle">signal_b</text><path d="M35 170h120" stroke="#829987" stroke-width="4"/><circle cx="162" cy="170" r="7" fill="#d8f36a"/></g>
+  <g fill="#91a694" font-family="monospace" font-size="12" text-anchor="middle"><text x="408" y="502">1</text><text x="408" y="542">0</text></g><path d="M430 535v-38h42v38h42v-38h42v38M655 535v-38h42v38h42v-38h42v38" fill="none" stroke="#d8f36a" stroke-width="4"/>
+  <text x="600" y="620" fill="#91a694" font-family="monospace" font-size="14" text-anchor="middle" letter-spacing="2">ONE BIT ≠ ONE BUS ≠ ONE STREAM</text>
+</svg>

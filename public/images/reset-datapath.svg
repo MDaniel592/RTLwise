@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Reset selectivo en un datapath AXI-Stream</title>
+  <desc id="desc">ARESETn llega al registro de validación mientras el bus de datos de 256 bits permanece sin reset.</desc>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#25352b" stroke-width="1"/></pattern>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#19271f"/><stop offset="1" stop-color="#304438"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  <text x="70" y="91" fill="#d8f36a" font-family="monospace" font-size="16" letter-spacing="3">RESET / ONLY WHAT MATTERS</text>
+  <text x="70" y="136" fill="#91a694" font-family="monospace" font-size="14">256-BIT AXI4-STREAM DATAPATH</text>
+  <g transform="translate(82 234)">
+    <rect width="192" height="206" rx="5" fill="#24372b" stroke="#aec6fa" stroke-width="2"/>
+    <text x="96" y="65" fill="#aec6fa" font-family="monospace" font-size="17" text-anchor="middle">SOURCE</text>
+    <text x="96" y="110" fill="#d8f36a" font-family="monospace" font-size="14" text-anchor="middle">VALID + DATA</text>
+    <path d="M35 146h122M35 165h122" stroke="#829987" stroke-width="3"/>
+    <circle cx="28" cy="146" r="6" fill="#f68952"/><circle cx="164" cy="146" r="6" fill="#d8f36a"/>
+  </g>
+  <path d="M274 300h128M274 358h128" fill="none" stroke="#d8f36a" stroke-width="5"/>
+  <path d="M274 330h128" fill="none" stroke="#f68952" stroke-width="4" stroke-dasharray="9 8"/>
+  <g transform="translate(402 196)">
+    <rect width="408" height="282" rx="6" fill="#18231d" stroke="#aec6fa" stroke-width="2"/>
+    <rect x="53" y="55" width="302" height="72" rx="3" fill="#2b4032" stroke="#d8f36a"/>
+    <text x="204" y="99" fill="#d8f36a" font-family="monospace" font-size="21" text-anchor="middle" letter-spacing="4">DATA_Q[255:0]</text>
+    <text x="204" y="116" fill="#829987" font-family="monospace" font-size="10" text-anchor="middle">NO RESET</text>
+    <rect x="53" y="165" width="302" height="63" rx="3" fill="#3b2d28" stroke="#f68952"/>
+    <text x="204" y="202" fill="#f68952" font-family="monospace" font-size="19" text-anchor="middle" letter-spacing="4">VALID_Q</text>
+    <text x="204" y="216" fill="#f7b292" font-family="monospace" font-size="10" text-anchor="middle">RESET = 0</text>
+    <path d="M20 90h33M20 196h33M355 90h33M355 196h33" stroke="#aec6fa" stroke-width="4"/>
+  </g>
+  <path d="M810 300h116M810 358h116" fill="none" stroke="#d8f36a" stroke-width="5"/>
+  <text x="932" y="275" fill="#91a694" font-family="monospace" font-size="13">TVALID</text>
+  <text x="932" y="390" fill="#91a694" font-family="monospace" font-size="13">TDATA / 256</text>
+  <path d="M650 575V438" stroke="#f68952" stroke-width="4" stroke-dasharray="7 8"/><path d="M650 427l-8 13h16z" fill="#f68952"/>
+  <text x="650" y="604" fill="#f68952" font-family="monospace" font-size="13" text-anchor="middle">ARESETn</text>
+  <text x="650" y="622" fill="#f7b292" font-family="monospace" font-size="10" text-anchor="middle">ACTIVE LOW → VALID_Q</text>
+  <g transform="translate(92 680)"><circle cx="8" cy="0" r="7" fill="#d8f36a"/><text x="29" y="5" fill="#91a694" font-family="monospace" font-size="13">DATAPATH: DON'T CARE WHILE INVALID</text><circle cx="430" cy="0" r="7" fill="#f68952"/><text x="451" y="5" fill="#91a694" font-family="monospace" font-size="13">CONTROL: RESETTABLE</text></g>
+</svg>

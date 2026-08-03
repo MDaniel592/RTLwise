@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Multi-Tile Synchronization en RFSoC</title>
+  <desc id="desc">Tres tiles RF reciben un reloj común y una señal SYSREF para alinear su latencia.</desc>
+  <defs><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#25352b" stroke-width="1"/></pattern><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1a2820"/><stop offset="1" stop-color="#32483a"/></linearGradient></defs>
+  <rect width="1200" height="760" fill="url(#bg)"/><rect width="1200" height="760" fill="url(#grid)"/>
+  <text x="70" y="92" fill="#d8f36a" font-family="monospace" font-size="16" letter-spacing="3">RFSoC / MULTI-TILE SYNC</text>
+  <text x="70" y="131" fill="#91a694" font-family="monospace" font-size="13">RELATIVE + DETERMINISTIC LATENCY</text>
+  <g transform="translate(94 226)">
+    <rect width="180" height="192" rx="5" fill="#24372b" stroke="#aec6fa" stroke-width="2"/><text x="90" y="65" fill="#aec6fa" font-family="monospace" font-size="18" text-anchor="middle">CLOCK</text><text x="90" y="102" fill="#d8f36a" font-family="monospace" font-size="15" text-anchor="middle">PL_CLK</text><text x="90" y="137" fill="#f68952" font-family="monospace" font-size="15" text-anchor="middle">SYSREF</text><circle cx="28" cy="101" r="7" fill="#d8f36a"/><circle cx="28" cy="136" r="7" fill="#f68952"/>
+  </g>
+  <path d="M274 327h80M274 362h80" stroke="#d8f36a" stroke-width="4"/><path d="M354 362h70v-90h88M354 362h70v90h88" stroke="#f68952" stroke-width="3" fill="none"/>
+  <g transform="translate(512 181)">
+    <g><rect width="198" height="128" rx="5" fill="#18231d" stroke="#d8f36a"/><text x="99" y="53" fill="#d8f36a" font-family="monospace" font-size="20" text-anchor="middle">TILE 0</text><text x="99" y="85" fill="#91a694" font-family="monospace" font-size="13" text-anchor="middle">REFERENCE</text><circle cx="22" cy="22" r="6" fill="#f68952"/></g>
+    <g transform="translate(0 158)"><rect width="198" height="128" rx="5" fill="#18231d" stroke="#aec6fa"/><text x="99" y="53" fill="#aec6fa" font-family="monospace" font-size="20" text-anchor="middle">TILE 1</text><text x="99" y="85" fill="#91a694" font-family="monospace" font-size="13" text-anchor="middle">MEASURE / ADJUST</text><circle cx="22" cy="22" r="6" fill="#f68952"/></g>
+  </g>
+  <path d="M710 245h108M710 403h108" stroke="#d8f36a" stroke-width="4"/>
+  <g transform="translate(818 199)"><rect width="280" height="254" rx="5" fill="#18231d" stroke="#f68952" stroke-width="2"/><text x="140" y="56" fill="#f68952" font-family="monospace" font-size="18" text-anchor="middle">MTS</text><path d="M40 99h200M40 137h200M40 175h200" stroke="#829987" stroke-width="3"/><circle cx="40" cy="99" r="6" fill="#d8f36a"/><circle cx="40" cy="137" r="6" fill="#d8f36a"/><circle cx="40" cy="175" r="6" fill="#d8f36a"/><text x="140" y="215" fill="#91a694" font-family="monospace" font-size="12" text-anchor="middle">FIFO LATENCY</text><text x="140" y="234" fill="#91a694" font-family="monospace" font-size="12" text-anchor="middle">MEASURE + OFFSET</text></g>
+  <g fill="#91a694" font-family="monospace" font-size="12" text-anchor="middle"><text x="178" y="505">1</text><text x="178" y="547">0</text></g><path d="M200 540v-40h50v40h50v-40h50v40M514 540v-40h50v40h50v-40h50v40M828 540v-40h50v40h50v-40h50v40" fill="none" stroke="#d8f36a" stroke-width="4"/>
+  <text x="600" y="616" fill="#91a694" font-family="monospace" font-size="14" text-anchor="middle" letter-spacing="2">SAME RELATIVE SAMPLE → DIFFERENT INTERNAL PATH</text>
+</svg>

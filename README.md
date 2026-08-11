@@ -60,10 +60,13 @@ El generador incluye automáticamente la nueva entrada en la portada, el archivo
 ## Estructura
 
 ```text
-content/posts/    Entradas Markdown
+content/posts/    Entradas Markdown en español
+content/posts/en/ Traducciones de las entradas al inglés (mismo slug)
 public/images/    Imágenes de las entradas
 src/styles.css    Estilos del sitio
 src/site.js       Interacciones pequeñas del navegador
 scripts/build.mjs Generador Markdown → HTML
 dist/             Salida generada (no editar a mano)
 ```
+
+El sitio detecta el idioma preferido del navegador entre español e inglés. El selector `ES / EN` del encabezado permite cambiarlo y guarda la elección en el navegador para las siguientes visitas.

@@ -36,6 +36,15 @@ body {
   line-height: 1.5;
 }
 
+html[data-locale="es"] [data-locale="en"],
+html[data-locale="en"] [data-locale="es"] {
+  display: none !important;
+}
+
+.locale-content {
+  display: block;
+}
+
 body.nav-open,
 body.dialog-open {
   overflow: hidden;
@@ -234,6 +243,45 @@ em {
   display: flex;
   align-items: center;
   gap: 14px;
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: .63rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  line-height: 1;
+}
+
+.language-button {
+  min-width: 27px;
+  padding: 6px 5px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  transition: background .2s ease, color .2s ease;
+}
+
+.language-button:hover,
+html[data-locale="es"] .language-button[data-language="es"],
+html[data-locale="en"] .language-button[data-language="en"] {
+  background: var(--dark);
+  color: var(--acid);
+}
+
+.language-divider {
+  color: var(--line);
 }
 
 .icon-button {

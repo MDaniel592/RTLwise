@@ -26,13 +26,13 @@ jobs:
           node-version: 22
 
       - name: Configure GitHub Pages
-          uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v6
 
       - name: Build static site
         run: SITE_ORIGIN="https://mdaniel592.github.io" SITE_BASE_PATH="/RTLwise" npm run build
 
       - name: Upload Pages artifact
-          uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
@@ -48,4 +48,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-          uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5
